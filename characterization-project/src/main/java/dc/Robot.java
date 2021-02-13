@@ -162,10 +162,10 @@ public class Robot extends TimedRobot {
     stick = new Joystick(0);
     
     // create left motor
-    WPI_TalonSRX leftMotor = setupWPI_TalonSRX(2, Sides.LEFT, false);
+    WPI_TalonSRX leftMotor = setupWPI_TalonSRX(3, Sides.LEFT, true);
 
 
-    WPI_TalonSRX rightMotor = setupWPI_TalonSRX(3, Sides.RIGHT, true);
+    WPI_TalonSRX rightMotor = setupWPI_TalonSRX(2, Sides.RIGHT, true);
     drive = new DifferentialDrive(leftMotor, rightMotor);
     drive.setDeadband(0);
 

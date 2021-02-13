@@ -1,9 +1,9 @@
 {
     # Ports for motors
     # If doing drive test, treat this as the left side of the drivetrain
-    "motorPorts": [2],
+    "motorPorts": [3],
     # Only if you are doing drive (leave empty "[]" if not)
-    "rightMotorPorts": [3],
+    "rightMotorPorts": [2],
     # Class names of motor controllers used.
     # 'WPI_TalonSRX'
     # 'WPI_VictorSPX'
@@ -14,7 +14,7 @@
     "rightControllerTypes": ['WPI_TalonSRX'],
     # Set motors to inverted or not
     # If doing drive test, treat this as the left side of the drivetrain
-    "motorsInverted": [False],
+    "motorsInverted": [True],
     # Only if you are doing drive (leave empty "[]" if not)
     "rightMotorsInverted": [True],
     # Encoder edges-per-revolution (*NOT* cycles per revolution!)
@@ -46,4 +46,5 @@
     # "" (NavX using default SPI, ADXRS450 using onboard CS0, or no gyro)
     "gyroPort": "SPI.Port.kMXP",
 }
+
 
